@@ -21,6 +21,14 @@
                 content: counter(heading)"." counter(subheading)" ";
                 counter-increment: subheading;
             }
+        ol > li {
+            margin-bottom: 15px; /* adjust the value as needed */
+        }
+
+        /* Optional: add space between inner list items */
+        ol li ol > li {
+            margin-bottom: 5px;
+        }
 
   </style>
 </head>
@@ -30,13 +38,13 @@
   
 <p><b>Lab supervisor:</b> You have just obtained a 2.5mL sample from affinity chromatography. Desalting is the next step, to separate out azurin from contaminants. There are 4 main steps.</p>
   <ol>
-  <li>Preparation of Desalting Column
+  <li><b>Preparation of Desalting Column</b>
        <ol type="a">
        <li>Remove the top cap and pour off the storage solution.</li>
        <li>Cut the sealed end of the column.</li>
        </ol>
   </li>
-<li>Equilibration of Desalting Column
+<li><b>Equilibration of Desalting Column</b>
             <ol type="a">
             <li>Decide how many times to wash column with 25mL total equilibration buffer (Hint: The volume of the resin bed is 8.3mL)</li>
             <li>Pour equilibration buffer into column, allow to enter bed and drain.</li>
@@ -44,7 +52,7 @@
             </ol>
   </li>
 
-<li>Application of Cell Extracts 
+<li><b>Application of Cell Extracts</b>
             <ol type="a">
             <li>Add 2.5mL sample to column using P1000 pipette.</li>
             <li>Decide whether to let sample enter bed fully or continue.</li>
@@ -52,7 +60,7 @@
             </ol>
    </li>
 
-    <li>Elution of Azurin
+    <li><b>Elution of Azurin</b>
             <ol type="a">
             <li>Add 3.5mL elution buffer to column using P1000 pipette.</li>
             <li>Collect eluate.</li>
