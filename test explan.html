@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <style>
+            body {
+                counter-reset: heading figures;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            h2:before {
+                content: counter(heading)" ";
+                counter-increment: heading;
+            }
+
+            h2 {
+                counter-reset: subheading;
+            }
+
+            h3:before {
+                content: counter(heading)"." counter(subheading)" ";
+                counter-increment: subheading;
+            }
+
+            figcaption:before {
+                content: 'Figure ' counter(figures) '. ';
+            }
+
+            figcaption {
+                counter-increment: figures;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Animating ‘Purification of azurin from total cell extracts: Steps 7-8’</h1>
+
+        <p>7. Apply Azurin to PD-10 desalting column equilibrated with 50 mM Tris pH 8.</p>
+        <p>8. Elute in 3.5 ml 50 mM Tris pH 8.</p>
+
+        <h2>Introduction</h2>
+        <p> Correct preparation of biological samples is a key element of scientific research. In the preparation of proteins, achieving high purity is particularly advantageous for downstream analysis, where impurities may affect the reliability of results [1]. Consequently, it is imperative to understand how to most effectively use a desalting column, allowing laboratories to save money through economic usage of expensive equipment and reagents, as well as ensuring dependable assay results.</p>
+        <p> Desalting is a common method used in the protein purification workflow aiming to remove contaminants from a sample, through the principle of size exclusion. Salts and other small molecules are often introduced into cell samples from previous purification steps, and can interfere with later handling of the protein. By a simple filtration process, desalting enables proteins and other large biomolecules to be easily purified, so that they may be stored and studied reliably.</p>
+
+        <h3>Desalting Columns</h3>
+        <p>Desalting columns are typically disposable single-use plastic columns, prepacked with a bed of resin. This bed is comprised of a network of cross-linked dextran or agarose molecules [2]. Upon sample application, molecules smaller than the pores of the beads (such as imidazole and salts) are able to enter the beads, whereas larger molecules, usually the protein you wish to separate out, cannot penetrate the beads so remain in the columns void volume [3]. Gravity-operated columns, such as the Cytiva PD-10 described in this protocol, rely on a buffer to provide head-pressure, pushing the sample through the column and eluting the void volume. Those smaller molecules permeating the beads are retained within the matrix, eluted after the protein and require further additions of buffer [4].</p>
+        <p> For use in desalting small samples in the laboratory, it is more time-efficient to use this type of prepacked column, as opposed to preparing a gel filtration column, which requires preparation and pouring of the media. This process can often prove meticulous and time-consuming, as the media must be uniformly packed to avoid introducing air bubbles, and not be allowed to run dry as this will cause uneven separation of the sample [5]. </p>
+
+        <figure>
+            <img src="pipette_diagram.jpg" alt="Adding alternative text that describes the image is good practice for inclusivity - it can be read by web programmes for those with sight impairments." , width=460, height=580>
+            <figcaption></figcaption>
+        </figure>
+
+        <h3>The Importance of Desalting</h3>
+        <p> Overall, desalting maintains the integrity of the protein. In the case of azurin, imidazole poses a particular problem. Free imidazole has the potential to bind to and displace copper ions from the binding sites of the protein due to its strong basic properties [6], thus acting as a mild denaturant which prevents accurate study of azurin’s native structure. It has also been shown to reconstitute ligands in azurin mutants, which may mask structural mutations, complicating analysis of electronic structure [7]. </p>
+        <p> Desalting removes low-molecular weight components such imidazole and salts to maintain the protein’s integrity and stability, preventing degradation when frozen for storage. This in turn improves experimental accuracy when performing tests using the purified protein. The presence of small unexpected molecules may interfere with spectroscopy and enzyme kinetics, yielding unreliable results. Desalting ensures proteins can be studied under conditions best reflecting their properties.</p>
+
+        <h2>How the Animation Works</h2>
+        <p> Throughout the animation, you will be able to visually track the movement of azurin by its dark blue colour, resulting from the addition of ferricyanide to the Ni His-trap earlier in the protocol. Each choice you make, whether correct or not, will allow the animation to progress. Feedback at the end indicates where you may have carried out the method incorrectly, and how this may appear.  </p>
+        <h3>Preparation of Desalting Column</h3>
+        <p> The animation first instructs you to remove the top cap and pour off the storage solution from the column, in order to prepare it for use.  This storage solution must be discarded as it contains 0.15% Kathon CG/ICP, a preservative used to inhibit microbial growth [8] which can contaminate the column. </p>
+<p> Although the top cap is replaceable, the removal of such is emphasised early in the animation to iterate that it should not be replaced onto the column during the desalting process. Gravity flow columns depend on the free movement of liquids through the bed, however replacing the cap will create a sealed vacuum which interferes with this. The sealed end of the PD-10 is then cut to allow complete movement down through the column. This order of operations prevents the creation of larger air bubbles in the column [9]. Opening the bottom of the column to air first creates suction which draws air down through the resin. The effects of air bubbles are discussed in more detail in 2.2.</p>
+
+        <h3>Equilibration of Desalting Column </h3>
+        <p> The equilibration section begins with the addition of buffer. The equilibration buffer must be the same as the later elution buffer, in order to maintain a stable environment throughout. Changes to the buffer composition such as pH could alter protein stability, potentially affecting the level of sample recovery following elution. Equilibration of the column is required to fully saturate the matrix with buffer, eliminating air pockets and establishing an equilibrium between the mobile phase (buffer) and stationary phase (resin)[3]. </p>
+<p>If the matrix is not fully saturated, air bubbles may be present within the void volume (the volume not occupied by the stationary phase) [10]. These reduce the surface area of interaction between the void volume, containing the sample, and the resin. As a result, channelling [13] may occur, where the mobile phase does not flow uniformly through the column. Some molecules you may wish to be excluded from elution (those smaller than the pores of the beads) may not make contact with the resin, so will not be separated out and instead end up eluting with your desired molecules. Consequently, a major issue you may encounter if incorrectly equilibrating is low purity of the recovered sample.</p>
+<p>Additionally, equilibration ensures removal of all traces of preservatives from the storage solution. The flowthrough should therefore be discarded as it contains contaminants. The official PD-10 protocol advises that around 25mL of equilibration buffer should be used in total [4] to wash a column bed. Given the packed resin bed has a volume of 8.3mL, using 25mL of buffer could reasonably be performed in around 3/4 washes [4]. This ensures full saturation of the column matrix with the buffer, preparing the column for effective size exclusion. </p>
+<p>Choosing to wash the column fewer times, while not immediately proving an issue, is evident later at the elution stage as some storage solution remaining in the column is eluted within the first few millilitres of eluate, depicted in the animation as a pale-yellow liquid [8]. This has implications downstream, where testing the absorbance of the eluate may show unexpected readings due to the UV absorbers present in the storage solution [4]. It then becomes harder to confirm that the desired protein has been purified. Furthermore, this can result in a faint protein band left in the column after elution, indicating elution was incomplete, as explained by channelling (above).</p>
+        <h3> Application of Cell Extracts</h3>
+        <p></p>
+<p> Following equilibration, the student prepares a P1000 pipette to apply the cell extracts to the column. The sample obtained from affinity chromatography has a volume of 2.5mL, and is added to the column. The student is then prompted to decide whether to either allow the sample to settle into the resin bed or proceed immediately. Allowing liquids to settle into the bed completely is a key instruction emphasised by the Cytiva protocol. Overloading the column prevents uniform settling and saturation of the matrix, resulting in low sample recovery and inefficient desalting [10]. This is visible as a diffuse, smeared band near the top of the bed.</p>
+<p> If you choose to allow the sample to settle, the animation emphasises the choice to either keep or discard the flowthrough from application of the cell extracts. A common issue students face when attempting a new protocol is mistakenly discarding a desired substance or mixing and therefore contaminating samples.</p>
+<p> It is important here to note that the applied sample has only been allowed to settle into the bed, not yet eluted with buffer. The flowthrough at the end of this step, therefore, results from the void volume of the matrix, still containing salts from the original extract which were unable to enter the resin and passed out immediately. Although azurin will be present in the collection beaker, it is contaminated with salts, so should be separated out, potentially for re-application, Treating the flow-through as eluate introduces contaminants into the purified sample, resulting in low tested purity.</p>
+<p> Following the PD-10 designated protocol precisely and carefully is vital during the application of cell extracts to the column.</p>
+        <h3>Elution of Azurin</h3>
+        <p> The specified volume of 3.5mL elution buffer is necessary to interact with the total volume of sample in the column. Higher volumes would dilute the eluate, requiring the addition of concentration steps to reduce the sample volume and increase the purity. In the interest of keeping the process brief, this is avoided.</p>
+<p>At the point of elution and further testing, you will observe the consequences of any mistakes made during the desalting process, as described in previous sections. This is comparable to carrying out such methods in a laboratory - without supervision you may overlook a small detail of the protocol and not notice any disruptions to the rest of the process until the very end. This animation is intended to sharpen the user’s eye to indicators of mistakes, and encourage troubleshooting from the end result to determine where the method went wrong.</p>
+
+        <h2>Additional Aspects to Consider</h2>
+        <p> It was not possible to cover every aspect of desalting columns in the animation, and applying the technique to other protocols may require adjustments.</p>
+
+        <h3>Choice of Desalting Column</h3>
+        <p> The PD-10 column is one of many options for desalting, with a molecular exclusion limit of >5000. When selecting a column for use with a particular molecule, you must consider the manufacturer’s exclusion limit, corresponding to the size of the pores in the matrix [3]. A general approach is to choose a column with a molecular weight cut-off (MWCO) which is at least 1/3 to ½ of the molecular weight of the target molecule [11], while contaminants must be several times smaller than the MWCO [12]. This ensures that, while salts will be able to enter the resin beads, the target molecule will be completely excluded [3]. You may also wish to consider using centrifuge columns, which rely on centrifugal force to pull the sample through the resin [12], instead of the pressure from a buffer. This method reduces the desalting capacity slightly [4], but ultimately does not dilute the sample, which removes the need for a future protein concentration step.</p>
+
+        <figure>
+        <figcaption></figcaption>
+        </figure>
+        <p></p>
+
+        <h3>Visibility of Buffers and Samples </h3>
+        <p> For easy distinction in the animation, all liquids are depicted as having different colours. This enables the animation to clearly show the light blue buffer settling into the column bed, which is an important step to observe before continuing with equilibration, sample dilution, and elution (see 2.3, 3.5). Similarly, the storage solution is depicted as a grey liquid, making clear that it must be poured off before use. Both choices are deliberate to emphasise the process of preparing and loading the column, however such visual cues are typically not realistic. Students are advised to closely observe the liquid front upon addition to the column (see 3.4), rather than relying on colours, as buffers and storage solutions are often colourless.</p>
+<p>Similarly, this protocol focuses on azurin, which is oxidised by ferricyanide in a previous step, giving rise to a distinct blue colour. This enables you to easily track the movement of the protein band through the column. Many proteins are colourless in solution, so all collected fractions will appear colourless. It may then become necessary to test each eluted fraction with a spectrophotometer for characteristic protein UV absorbance at 280nm [10].</p>
+        <h3>Volume Limit of PD-10 Column</h3>
+<p>The PD-10 column takes a maximum sample volume of 2.5mL, at which desalting efficiency is at its highest [4]. As the previous steps of the protocol yield a 2.5mL sample, the user does not need to dilute this, however samples of a lower volume must be adjusted to 2.5mL with equilibration buffer. </p>
+<p>Volumes smaller than recommended do not provide enough head-pressure to chase the sample through the column, resulting in incomplete elution as the sample does not fully saturate the matrix. Thus, if you choose not to dilute the sample you may expect to see a narrower protein band which later becomes much more visibly diffuse upon elution. </p>
+<p>On the other hand, volumes larger than 2.5mL occupy more than the matrix void volume, causing the protein band to spread out further in the bed. This leads to the overlapping elution of both protein and salt, as the elution buffer chases out a smeared band of protein. Additionally, the high hydrostatic pressure may compress the resin, impacting the flow and causing channelling [13]. In this situation, you can split the sample between several desalting columns, ensuring each total 2.5mL with buffer, or select a different desalting column with a larger loading volume. </p>
+      <h3>Solvent Level</h3>
+<p> As emphasised in Application of Cell Extracts (2.3), it is important to allow all liquids to fully settle into the column bed. However, the animation does not precisely depict at what point you may consider a liquid “settled”. Students are advised to observe the solvent front, which should not drop below the surface of the resin. Once the liquid meniscus is visible just above the bed, you should proceed, so as not to let the column “run dry”. This has the risk of introducing air and cracks into the resin, causing uneven flow of the sample (see 2.2) [5] and ineffective desalting. </p>
+
+      <h3>Collecting Eluate in Fractions</h3>
+  <p> The volume of 3.5mL elution buffer specified in the Cytiva protocol [4] provides optimal elution of only the desired protein. However, when desalting larger samples in other columns, it may be more practical to collect several fractions. In this case, it is generally advised to collect 1mL fractions, where the first few will contain only buffer, followed by the protein molecules. If the molecule is coloured or has a bound dye, it can easily be seen which fractions contain the desired protein, however for colourless molecules you should test each fraction with a UV spectrophotometer. This again emphasises the necessity of equilibrating the PD-10 column to remove UV absorbers from the storage solution, which could affect absorbance readings, suggesting the protein is present in empty fractions.</p>
+        <h3>Safety</h3>
+        <p> Throughout any laboratory work, it is vital to take appropriate safety measures, namely wearing a lab coat, gloves and safety goggles. This is particularly important when pouring off the storage solution. Kathon CG/ICP biocide is classified as a corrosive irritant [8], so it is vital to avoid contact with skin and direct inhalation.</p>
+        
+        <h2>Conclusion</h2>
+        <p> This project focused on desalting, what you should consider and pay attention to during the process and the common pitfalls. Effective use of a desalting column marks the penultimate step of the azurin purification protocol, so it is vital to understand how to carry it out to ensure the highest protein recovery and purity. This page addresses the use of PD-10 columns, so exact volumes of samples and buffers will not necessarily apply to every pre-packed column, however the key principles of size exclusion, allowing uniform saturation and solvent flow, and avoiding contamination still apply.</p>
+        <p> It is important to note that this animation is not completely accurate to what you will see when carrying out the protocol yourself. Due to the time constraints of this project, I opted to represent the different errors in steps, rather than a second-by-second detail of the movement of the protein band through the column. The animation is provided as visual guidance to the steps and order of the desalting process, which is addressed in more detail in this webpage. You can familiarise yourself with potential errors using the chromatography troubleshooting document (see 5.3).</p>
+<p> Overall, I found this project to be a particularly engaging way of learning about a new purification method. Developing the animation gave me experience with a new coding language, and allowed me to fill in gaps from my research which I would not have picked up on, had I not attempted to create a visual representation of the process. Throughout the many iterations of my animation, I felt that the experimentation and troubleshooting required somewhat mimicked that needed when carrying out a new protocol in a laboratory. Once I had developed the base animation, I needed to create a series of new frames which would be played if a wrong option was chosen. This was initially a daunting task, however after breaking down each possible “branch” of the timeline, I worked systematically, creating and linking each clip and testing that all would work as I had expected.</p>
+       
+        <h2>Additional Resources for Students</h2>
+        <h3>Theory</h3>
+        <p>
+            This <a href="https://youtu.be/_4Wu95XWPkQ?si=WwE1MEHo_MlSvihg&t=24">YouTube video (0:24-1:07)</a>
+            explains the theory behind size exclusion chromatography, and its application in protein desalting.      
+        </p>
+        <p>
+            This <a href="https://cdn.cytivalifesciences.com/api/public/content/digi-14230-pdf">PDF</a>
+             explains in greater detail the application of Sephadex G-25 resins, as found in the PD-10 Column.
+               </p>
+        <h3>Equipment</h3>
+        <p>
+            Under Documents > Instructions for Use at this <a href="https://www.cytivalifesciences.com/en/us/shop/chromatography/prepacked-columns/desalting-and-buffer-exchange/sephadex-g-25-in-pd-10-desalting-columns-p-05778">webpage</a>
+             , you will find a downloadable PDF of the official PD-10 Desalting Column Product Booklet. It explains the principle behind desalting and gives a protocol for use of the column, aswell as data on its desalting capacity and characteristics of the column.
+        
+        </p>
+        <p>
+            This <a href="https://cdn.cytivalifesciences.com/api/public/content/digi-13947-pdf?_gl=1*1465otj*_gcl_au*MjE2MzczMTkyLjE3NTEwMTkzNjM.*_ga*MTE2OTE3NjgzOC4xNzUxMDE5MzY3*_ga_CS9H0CZBWW*czE3NTIyMzA5NDIkbzUkZzEkdDE3NTIyMzMzODIkajYwJGwwJGgw">PDF</a>
+              provides a detailed guide to selecting size exclusion columns and resins.       
+        </p>
+        <h3>Troubleshooting</h3>
+        <p>
+            This <a href="https://wolfson.huji.ac.il/purification/PDF/Columns/GE_ProteinPurificTroubleshGuide.PDF#:~:text=Choose%20low%20protein%20binding%20membranes%20such%20as%20WhatmanTM,tubing%20Always%20filter%20samples%20and%20bufers%20before%20use">PDF booklet</a>
+               provides a troubleshooting guide for different methods of protein purification, with possible causes and solutions. For guidance with desalting, focus on remedies for SEC(size exclusion chromatography).
+        </p>
+
+        <h2>References</h2>
+        <ol>
+            <li> Creative Proteomics. Desalting in Protein Purification [online]. Available from: <a href=" https://www.creative-proteomics.com/resource/guide-desalting-protein-purification.htm”>https://www.creative-proteomics.com/resource/guide-desalting-protein-purification.htm</a> </li>
+<li> Duong-Ly KC, Gabelli SB. Chapter Nine - Gel Filtration Chromatography (Size Exclusion Chromatography) of Proteins. Methods Enzymol [online]. 2014;541(1):105-114. Available from: <a href="https://doi.org/10.1016/B978-0-12-420119-4.00009-4"> https://doi.org/10.1016/B978-0-12-420119-4.00009-4</a></li>
+<li> Hagel L. Gel-Filtration Chromatography. Curr Protoc Protein Sci [online]. 1998;14(1):8.3.1-8.3.30. Available from: <a href="https://doi.org/10.1002/0471140864.ps0803s14”> https://doi.org/10.1002/0471140864.ps0803s14</a></li>
+<li> Cytiva. PD-10 Desalting Column Product Booklet [online] Available from: <a href="https://d3.cytivalifesciences.com/prod/IFU/52130800.pdf?_gl=1*4a0he3*_gcl_au*MjE2MzczMTkyLjE3NTEwMTkzNjM.*_ga*MTE2OTE3NjgzOC4xNzUxMDE5MzY3*_ga_CS9H0CZBWW*czE3NTc4NjE3MTMkbzIxJGcxJHQxNzU3ODYyODEwJGo2MCRsMCRoMA.”> https://d3.cytivalifesciences.com/prod/IFU/52130800.pdf </a></li>
+<li> Millar S. Tips and Tricks for the Lab: Column Troubleshooting and Alternatives [online]. Wiley-VCH: Weinheim; 2012. Available from: <a href="https://www.chemistryviews.org/details/education/2345141/Tips_and_Tricks_for_the_Lab_Column_Troubleshooting_and_Alternatives/”> https://www.chemistryviews.org/details/education/2345141/Tips_and_Tricks_for_the_Lab_Column_Troubleshooting_and_Alternatives/”</a></li>
+<li> Tolomeu HV, Fraga CAM. Imidazole: Synthesis, Functionalization and Physicochemical Properties of a Privileged Structure in Medicinal Chemistry. Molecules [online]. 2023;28(2):838. Available from: <a href="https://doi.org/10.3390/molecules28020838"> https://doi.org/10.3390/molecules28020838</a></li>
+<li> van Gastel M, Coremans JWA, Mol J, Jeuken LJC, Canters GW, Groenen EJJ. The binding of imidazole in an azurin-like blue-copper site. J Biol Inorg Chem [online]. 1999;4(1):257-265. Available from: <a href="https://doi.org/10.1007/s007750050311"> https://doi.org/10.1007/s007750050311</a> </li>
+<li> Rohm and Haas. Kathon CG/ICP and Kathon CG/ICP II – Technical Data Sheet. PA: Rohm and Haas; 2007. </li>
+<li> Pierce Biotechnology. Remove air bubbles from columns to restore flow rate [online]. Available from: <a href=" https://documents.thermofisher.com/TFS-Assets/LSG/Application-Notes/TR0007-Remove-air-bubbles.pdf "> https://documents.thermofisher.com/TFS-Assets/LSG/Application-Notes/TR0007-Remove-air-bubbles.pdf </a> </li>
+<li> Roberts P. Optimizing Use of Your Desalting Column [online]. You Do Bio: Rødovre. Available from: <a href=" https://www.youdobio.com/da/how-desalting-columns-work/"> https://www.youdobio.com/da/how-desalting-columns-work/</a> </li>
+<li> Cobetter. How to Select the Correct MWCO for DNA, RNA and Protein Purification and Concentration [online]. Available from: <a href=" https://cobetter.com/technical/how-to-select-the-correct-mwco-for-dna-rna-and-protein-purification-and-concentration.html "> https://cobetter.com/technical/how-to-select-the-correct-mwco-for-dna-rna-and-protein-purification-and-concentration.html </a></li>
+<li> ThermoFisher Scientific. Desalting and Gel Filtration Chromatography [online]. Available from: <a href="https://www.thermofisher.com/uk/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/desalting-gel-filtration-chromatography.html">https://www.thermofisher.com/uk/en/home/desalting-gel-filtration-chromatography.html</a> </li>
+<li> Briens LA, Briens CL, Margaritis A, Cooke SL, Bergougnou MA. Characterization of channelling in multiphase systems. Application to a liquid fluidized bed of angular Biobone particles. Powder Technol [online]. 1997;91(1):1-9. Available from: <a href=" https://doi.org/10.1016/S0032-5910(96)03206-8 ">https://doi.org/10.1016/S0032-5910(96)03206-8 </a> </li>
+        </ol>
+    </body>
+</html>
